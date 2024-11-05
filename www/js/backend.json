@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "imagem": "img/camisadourada.png",
+        "nome": "Camisa 100 anos<br>",
+        "principal_caracteristica": "Branco-Dourado",
+        "rating": 4.5,
+        "likes": "91%",
+        "reviews": 25,
+        "descricao": "Aproveite a nossa Camisa comemorando os 100 anos da reparação historica.",
+        "detalhes": [
+            {
+                "caracteristica": "Tecido",
+                "detalhes": "100% algodão"
+            },
+            {
+                "caracteristica": "Cores",
+                "detalhes": "Dourado e Branco"
+            },
+            {
+                "caracteristica": "Design",
+                "detalhes": "Corpo elegante em materiais premium, combinando estilo e durabilidade"
+            },
+            {
+                "caracteristica": "comprimentos",
+                "detalhes": "P/M/G/GG/XG"
+            }
+        
+         
+        ],
+        "preco": 359.99,
+        "preco_promocional": 339.99
+    },
+    {
+        "id": 2,
+        "imagem": "img/basco.png",
+        "nome": "Camise Dinamite<br>",
+        "principal_caracteristica": "Camisa homenagem ao Dinamite",
+        "rating": 3.8,
+        "likes": "94%",
+        "reviews": 15,
+        "descricao": "Camisa em Homenagem ao idolo do vasco Roberto dinamite com seu gol considerao o gol mais lindo do maracanã.",
+        "detalhes": [
+            {
+                "caracteristica": "Tecido",
+                "detalhes": "100% algodão"
+            },
+            {
+                "caracteristica": "comprimentos",
+                "detalhes": "P/M/G/GG/XG"
+            }
+        ],
+        "preco": 259.00,
+        "preco_promocional": 220.00
+    },
+    {
+        "id": 3,
+        "imagem": "img/camisa-polo.png",
+        "nome": "Camisa 22/23<br>",
+        "principal_caracteristica": "Camisa Polo",
+        "rating": 4.5,
+        "likes": "96%",
+        "reviews": 25,
+        "descricao": "Explore o ápice da Elegancia com está camisa do seu time do coração.",
+        "detalhes": [
+            {
+                "caracteristica": "Tecido",
+                "detalhes": "100% algodão"
+            },
+            {
+                "caracteristica": "comprimentos",
+                "detalhes": "P/M/G/GG/XG"
+            }
+        ],
+        "preco": 400.00,
+        "preco_promocional": 370.00
+    },
+    {
+        "id": 4,
+        "imagem": "img/image 12.png",
+        "nome": "Camisa 100 anos fora",
+        "principal_caracteristica": "camisa 24/25 preta",
+        "rating": 4.8,
+        "likes": "89%",
+        "reviews": 30,
+        "descricao": "Aproveite a nossa Camisa comemorando os 100 anos da reparação historica..",
+        "detalhes": [
+            {
+                "caracteristica": "Tecido",
+                "detalhes": "100% algodão"
+            },
+            {
+                "caracteristica": "comprimentos",
+                "detalhes": "P/M/G/GG/XG"
+            }
+        ],
+        "preco": 359.99,
+        "preco_promocional": 339.99
+    }
+]

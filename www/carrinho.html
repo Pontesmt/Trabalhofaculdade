@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#2196f3" />
+    <title>Vasco Store</title>
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <link rel="stylesheet" href="css/carrinho.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="css/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="css/custom.css" /> <!-- Referência ao CSS personalizado -->
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            <div data-name="carrinho" class="page color-theme-blue">
+                <div class="nav-top cart">
+                    <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                    <strong><i class="ri-shopping-cart-fill"></i>Carrinho</strong>
+                    <a href="#" class="link popover-open" data-popover=".popover-menu"><i class="ri-more-fill"></i></a>          
+                </div>
+
+                <div class="popover popover-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                        <div class="list">
+                            <ul>
+                                <li><a id="esvaziar" href="/dialog/" class="list-button popover-close"><i class="ri-delete-bin-line"></i>Limpar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="toolbarTotais" style="margin-bottom: 110px;" class="toolbar toolbar-bottom">
+                    <div id="totais" class="toolbar-inner display-flex align-itens-center justify-content-center">
+                        <div class="margin-top w-80 display-flex justify-content-space-between">
+                            <span class="bold">Subtotal: </span>
+                            <span id="subtotal" class="bold">R$ 800</span>
+                        </div>
+                        <div class="w-90 display-flex justify-content-space-between">
+                            <span class="bold">Locais de Retirada: </span>
+                            <span class="bold">Nilópolis, Realengo e Campo Grande</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="toolbarCheckout" class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-itens-center justify-content-center">
+                        <div class="flex-100">
+                            <button id="agendarBusca" class="add-cart">Agendar Busca</button>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <div id="listaCarrinho">
+                        <div class="item-carrinho">
+                            <div class="area-img">
+                                <img src="img/camisa-polo.png">
+                            </div>
+                            <div class="area-details">
+                                <div class="sup">
+                                    <span class="name-prod">camisa polo vasco retrô</span>
+                                    <a class="delete-item" href="#">
+                                        <i class="mdi mdi-close"></i>
+                                    </a>
+                                </div>
+                                <div class="middle">
+                                    <span>Tamanho G</span>
+                                </div>
+                                <div class="preco-quantidade">
+                                    <span>R$350</span>
+                                    <div class="count">
+                                        <a class="minus" href="#">-</a>
+                                        <input readonly class="qtd-item" type="text" value="1">
+                                        <a class="plus" href="#">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione outros itens do carrinho aqui -->
+                    </div>
+                </div>
+
+                <!-- Modal para confirmação de agendamento -->
+                <div class="popup" id="modalAgendamento">
+                    <div class="view">
+                        <div class="page">
+                            <div class="page-content">
+                                <div class="block">
+                                  <h3 class="modal-title">Confirmação de Agendamento</h3>
+                                  <p class="modal-message">
+                                      Sua busca foi agendada. Você tem o prazo de 7 dias para buscá-la. 
+                                      Caso não busque, você será bloqueado de agendar por 1 mês.
+                                      Ao chegar na loja apresente seu cartão de sócio e diga sua compra que nós buscaremos no banco e 
+                                      daremos o desconto de sócio e da busca.
+                                      <br>
+                                      (Não se preocupe cada agendamento fica salvo em nosso banco caso deseja cancelar algo nos envie um email(Colinadogigante@gmailcom) detalhando sua compra)
+                                  </p>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <a href="#" id="confirmarAgendamento" class="button button-confirm">Confirmar</a>
+                                        <a href="#" id="fecharAgendamento" class="button button-close">Fechar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/custom.js"></script> <!-- Referência ao JavaScript personalizado -->
+</body>
+</html>

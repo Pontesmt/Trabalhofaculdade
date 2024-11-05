@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3" />
+    <!-- Your app title -->
+    <title>Vasco Store</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
+    <link rel="stylesheet" href="css/carrinho.css" />
+    
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" href="css/remixicon/remixicon.css" />
+  </head>
+
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="index" class="page color-theme-blue">
+          <!-- NAV TOPO-->
+          <div class="top-nav">
+            <img style="padding-left: 15px;"src="img/EscudoVasco.png" height="50px" width="39px" />
+            <h1 class="title-logo">Vasco Store</h1>
+
+            <a href="/carrinho/" class="btn-cart" data-count="0"
+              ><i class="ri-shopping-cart-2-fill"></i>
+            </a>
+          </div>
+
+          <form>
+            <input id="search" placeholder="O que deseja?" type="text" />
+            <i class="icone-busca ri-search-line"></i>
+          </form>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block no-margin-top">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/propaganda 1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/propaganda 2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Component 3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Component 4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/Component 5.png" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div
+                  class="display-flex align-itens-center justify-content-space-between"
+                >
+                  <h2>Categorias</h2>
+                  
+                  
+                </div>
+
+                <div class="swiper categorias">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <button class="filter-btn active">Todas</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="filter-btn active">Camisas</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="filter-btn active">Bonés</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="filter-btn active">Bermudas</button>
+                    </div>
+                    <div class="swiper-slide">
+                      <button class="filter-btn active">Calças</button>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div id="produtos" class=" margin-top row display-flex align-itens-center justify-content-start">
+
+                  <!-- ITEM SKELETON-->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container skeleton-effect-wave">                    
+                      </div>
+                        <div class="nome-rating">
+                            <span style="margin-right: auto; width: 90px;" 
+                              class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                            <span style="width: 20px; margin-right:  5px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                            <span style="width: 30px; margin-right:  15px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                        <div class="bold price"> <span style="margin-top: 5px; height: 20px; width: 60px;"
+                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                    </a>
+                  </div>
+
+                                    <!-- ITEM SKELETON-->
+                                    <div class="item-card">
+                                      <a href="#" class="item">
+                                        <div class="img-container skeleton-effect-wave">                    
+                                        </div>
+                                          <div class="nome-rating">
+                                              <span style="margin-right: auto; width: 90px;" 
+                                                class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                              <span style="width: 20px; margin-right:  5px;"
+                                                 class="gelo skeleton-effect-wave skeleton-block"></span>
+                                              <span style="width: 30px; margin-right:  15px;"
+                                                 class="gelo skeleton-effect-wave skeleton-block"></span>
+                                          </div>
+                                          <div class="bold price"> <span style="margin-top: 5px; height: 20px; width: 60px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                          </div>
+                                      </a>
+                                    </div>
+
+                                                      <!-- ITEM SKELETON-->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container skeleton-effect-wave">                    
+                      </div>
+                        <div class="nome-rating">
+                            <span style="margin-right: auto; width: 90px;" 
+                              class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                            <span style="width: 20px; margin-right:  5px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                            <span style="width: 30px; margin-right:  15px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                        <div class="bold price"> <span style="margin-top: 5px; height: 20px; width: 60px;"
+                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                    </a>
+                  </div>
+
+                                    <!-- ITEM SKELETON-->
+                                    <div class="item-card">
+                                      <a href="#" class="item">
+                                        <div class="img-container skeleton-effect-wave">                    
+                                        </div>
+                                          <div class="nome-rating">
+                                              <span style="margin-right: auto; width: 90px;" 
+                                                class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                                              <span style="width: 20px; margin-right:  5px;"
+                                                 class="gelo skeleton-effect-wave skeleton-block"></span>
+                                              <span style="width: 30px; margin-right:  15px;"
+                                                 class="gelo skeleton-effect-wave skeleton-block"></span>
+                                          </div>
+                                          <div class="bold price"> <span style="margin-top: 5px; height: 20px; width: 60px;"
+                                            class="gelo skeleton-effect-wave skeleton-block"></span>
+                                          </div>
+                                      </a>
+                                    </div>
+
+                                                      <!-- ITEM SKELETON-->
+                  <div class="item-card">
+                    <a href="#" class="item">
+                      <div class="img-container skeleton-effect-wave">                    
+                      </div>
+                        <div class="nome-rating">
+                            <span style="margin-right: auto; width: 90px;" 
+                              class="gelo skeleton-effect-wave skeleton-block color-gray"></span>
+                            <span style="width: 20px; margin-right:  5px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                            <span style="width: 30px; margin-right:  15px;"
+                               class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                        <div class="bold price"> <span style="margin-top: 5px; height: 20px; width: 60px;"
+                          class="gelo skeleton-effect-wave skeleton-block"></span>
+                        </div>
+                    </a>
+                  </div>
+
+                  
+                  
+                 
+  
+                 
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+  </body>
+</html>
